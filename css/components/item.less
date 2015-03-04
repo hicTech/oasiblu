@@ -1,0 +1,89 @@
+
+.item {
+
+  .EXTENDER();
+  @item_header_height: 75px;
+  @item_mobile_header_height: 54px;
+
+  @item_subheader_mainrow_height: 95px;
+  @item_subheader_buttonsrow_height: 50px;
+
+  @item_mobile_subheader_mainrow_height: 80px;
+  @item_mobile_subheader_buttonsrow_height: 40px;
+
+  .itemSize(@item_header_height, @item_subheader_mainrow_height, @item_subheader_buttonsrow_height);
+
+  @media @smallmobile, @mobile{
+    .itemSize(@item_mobile_header_height, @item_mobile_subheader_mainrow_height, @item_mobile_subheader_buttonsrow_height);
+  }
+
+  @media @tablet{
+    .itemSize(@item_header_height, @item_subheader_mainrow_height, @item_subheader_buttonsrow_height);
+  }
+
+  @media @desktop{
+    .itemSize(@item_header_height, @item_subheader_mainrow_height, @item_subheader_buttonsrow_height);
+  }
+
+  @media @wide{
+    .itemSize(@item_header_height, @item_subheader_mainrow_height, @item_subheader_buttonsrow_height);
+  }
+
+}
+
+.itemSize(@header_height,@subheader_mainrow_height, @subheader_buttonsrow_height) {
+
+  .itemHeader {
+    height: @header_height;
+    box-shadow: inset -0px -1px rgba(0, 0, 0, 0.2);
+
+    .itemHeaderBackButton {
+      width: @header_height;
+    }
+
+    .itemHeaderBackButton .icon {
+      font-weight: bold;
+    }
+  }
+
+  .itemController {
+    .linkButton{
+
+      line-height: 25px;
+      text-align: center;
+
+      .icon{
+        .icon(1em);
+      }
+
+      span{
+        font-size: @font-size-base - 2 ;
+      }
+    }
+  }
+
+  .itemSubHeaderContainerMainRow {
+    height: @subheader_mainrow_height;
+    background-color: #fafafa;
+  }
+
+  .itemSubHeaderContainerButtonsRow {
+    height: @subheader_buttonsrow_height;
+    box-shadow: inset 0px -5px 5px rgba(0, 0, 0, 0.02);
+    background-color: #fafafa;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

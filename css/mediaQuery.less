@@ -1,0 +1,136 @@
+
+
+/* screens range */
+
+@screen-s-min:    0em;          /*  0px  */
+@screen-s-max:    20em;         /* 320px  */
+@screen-min:      20.063em;     /* 321px  */
+@screen-max:      40em;         /* 640px  */
+@screen-m-min:    40.063em;     /* 641px  */
+@screen-m-max:    64em;         /* 1024px  */
+@screen-l-min:    64.063em;     /* 1025px  */
+@screen-l-max:    90em;         /* 1440px  */
+@screen-xl-min:   90.063em;     /* 1441px  */
+@screen-xl-max:   120em;        /* 1920px  */
+@screen-xxl-min:  120.063em;    /*  1921px  */
+
+
+/*
+ 0----- smallmobile -----320-----  mobile  -----640-----  tablet  -----1024-----  notebook  -----1440----- desktop -----1920----- wide
+*/
+
+
+.only-notebook{
+  display: block;
+}
+
+@smallmobile: ~"only screen and (max-width: @{screen-s-max})";
+@mobile: ~"only screen and (min-width: @{screen-min}) and (max-width: @{screen-max})";
+@tablet: ~"only screen and (min-width: @{screen-m-min}) and (max-width: @{screen-m-max})";
+@notebook: ~"only screen and (min-width: @{screen-l-min}) and (max-width: @{screen-l-max})";
+@desktop: ~"only screen and (min-width: @{screen-xl-min}) and (max-width: @{screen-xl-max})";
+@wide: ~"only screen and (min-width: @{screen-xxl-min})";
+
+
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+~"only screen and (min-device-pixel-ratio: 1.5)";
+
+
+@media @smallmobile{
+  .only-smallmobile{
+    display: block;
+  }
+  .hide-smallmobile{
+    display: none;
+  }
+  .hide-mobile, .hide-tablet, .hide-notebook, .hide-desktop, .hide-wide{
+    display: block;
+  }
+  .only-notebook{
+    display: none;
+  }
+}
+
+@media @mobile{
+  .only-mobile{
+    display: block;
+  }
+  .hide-mobile{
+    display: none;
+  }
+  .hide-smallmobile, .hide-tablet, .hide-notebook, .hide-desktop, .hide-wide{
+    display: block;
+  }
+  .only-notebook{
+    display: none;
+  }
+}
+
+
+@media @tablet{
+  .only-tablet{
+    display: block;
+  }
+  .hide-tablet{
+    display: none;
+  }
+  .hide-mobile, .hide-smallmobile, .hide-notebook, .hide-desktop, .hide-wide{
+    display: block;
+  }
+  .only-notebook{
+    display: none;
+  }
+}
+
+/* default */
+@media @notebook{
+  .only-notebook{
+    display: block;
+  }
+  .hide-notebook{
+    display: none;
+  }
+  .hide-mobile, .hide-tablet, .hide-smallmobile, .hide-desktop, .hide-wide{
+    display: block;
+  }
+}
+
+
+@media @desktop{
+  .only-desktop{
+    display: block;
+  }
+  .only-notebook{
+    display: none;
+  }
+  .hide-desktop{
+    display: none;
+  }
+  .hide-mobile, .hide-tablet, .hide-notebook, .hide-smallmobile, .hide-wide{
+    display: block;
+  }
+}
+
+@media @wide{
+  .only-wide{
+    display: block;
+  }
+  .only-notebook{
+    display: none;
+  }
+  .hide-wide{
+    odisplay: none;
+  }
+  .hide-mobile, .hide-tablet, .hide-notebook, .hide-desktop, .hide-smallmobile{
+    display: block;
+  }
+}
+
+
+
+
+
+
+

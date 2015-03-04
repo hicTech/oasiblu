@@ -1,0 +1,137 @@
+/*
+<div style="float: left; margin: 0px 40px 0px 10px;">
+    <div class="vertical-meter vertical-77">
+        <div class="maxValue"> -180°</div>
+        <div class="currentValue"> - 170°</div>
+        <div class="first"><div></div></div>
+        <div class="second"><div></div></div>
+        <div class="minValue"> -270°</div>
+    </div>
+</div>
+*/
+@vertical_meter_color: @third-section-bgColor;
+
+
+
+
+.generate_vertical_first(100);
+.generate_vertical_first(@n, @i: 0) when (@i =< @n) {
+
+  .vertical-meter.vertical-@{i} .first div {
+    height: (unit(@i, px));
+  }
+
+  .vertical-meter.vertical-@{i} .currentValue{
+    top: (unit(98 - @i, px));
+  }
+
+
+  .generate_vertical_first(@n, (@i + 1));
+}
+
+
+.vertical-meter {
+
+  @media @smallmobile, @mobile{
+    -webkit-transform: scale(0.7);  /* Chrome, Opera 15+, Safari 3.1+*/
+    -ms-transform: scale(0.7);  /* IE 9*/
+    transform: scale(0.7);  /* Firefox 16+, IE 10+, Opera */
+  }
+
+
+  position: relative;
+  width: 50px;
+  margin:0px 0px 0px 20px;
+  height: 120px;
+
+  .first {
+    width: 15px;
+    height: 120px;
+    border: solid 3px #afafaf;
+    border-radius: 20px;
+    position: absolute;
+  }
+
+  .first div{
+    width: 15px;
+    height: 0px;
+    background-color: @vertical_meter_color;
+    position: absolute;
+    bottom: 13px;
+  }
+
+  .second {
+    position: absolute;
+    overflow: hidden;
+    top: 110px;
+    left: -4px
+  }
+
+  .second div {
+    width: 25px;
+    margin-top: -4px;
+    height: 25px;
+    border-radius: 20px;
+    border: solid 2px #afafaf;
+    background-color: @vertical_meter_color;
+  }
+
+
+  .maxValue{
+    position: absolute;
+    font-size: 0.7em;
+    left: 40px;
+  }
+
+  .maxValue:after{
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-bottom: solid 1px;
+    position: absolute;
+    left: -18px;
+    top: 9px;
+    opacity: 0.2;
+  }
+
+  .minValue{
+    position: absolute;
+    font-size: 0.7em;
+    left: 40px;
+    top: 98px;
+  }
+
+  .minValue:after{
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-bottom: solid 1px;
+    position: absolute;
+    left: -18px;
+    top: 9px;
+    opacity: 0.2;
+  }
+
+
+  .currentValue{
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: bold;
+    left: -50px;
+    top: 98px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 3px 5px;
+  }
+
+  .currentValue:after{
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-bottom: solid 1px;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    opacity: 0.4;
+  }
+
+}

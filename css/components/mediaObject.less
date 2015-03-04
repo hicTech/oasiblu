@@ -1,0 +1,55 @@
+.mediaObject {
+
+  @title_font_size: @font-size-base + 6;
+  @subTitle_font_size: @font-size-base + 1;
+  @icon_size:6em;
+
+  @title_mobile_font_size: @font-size-base + 2;
+  @subTitle_mobile_font_size: @font-size-base;
+  @icon_mobile_size:5em;
+
+  .mediaObjectSizing(@title_font_size, @subTitle_font_size, @icon_size);
+
+  @media @smallmobile, @mobile{
+    .mediaObjectSizing(@title_mobile_font_size, @subTitle_mobile_font_size, @icon_mobile_size);
+  }
+
+
+  .mediaObjectSizing(@title,@subTitle, @icon) {
+
+    .mediaObjectRight {
+      width: 100%;
+      text-align: right;
+
+      .mediaObjectRightTitle {
+        font-size: @title;
+        font-weight: bold;
+        line-height: @title;
+      }
+
+      .mediaObjectRightSubtitle {
+        color: @secondary-text-color-base;
+        font-size: @subTitle;
+        line-height: 16px;
+        padding-top: 5px;
+
+        .mediaObjectRightSubtitle small {
+
+        }
+      }
+    }
+
+    .mediaObjectLeft {
+      width: 100%;
+      text-align: left;
+
+      .mediaObjectIcon {
+        font-size: @icon;
+      }
+
+    }
+
+  }
+
+}
+

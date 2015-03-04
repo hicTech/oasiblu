@@ -1,0 +1,120 @@
+// typography
+@font-size-base:14px;
+@line-height-base: 1.5em;
+@text-color-base:#444;
+@secondary-text-color-base:#555;
+@white-text-color:@md-grey-1000;;
+
+
+//actions colors
+@red:#fa4b4c;
+@blue:#4bb2fa;
+@green:#7ae820;
+
+
+
+
+
+// standard section colors
+@standard-section-bgColor:#efefef;
+@standard-section-color:@text-color-base;
+
+
+// 1st section colors
+@first-section-bgColor:@md-purple-500;
+@first-section-color:@white-text-color;
+
+// 2nd section colors
+@second-section-bgColor:@md-orange-500;
+@second-section-color:@white-text-color;
+
+
+// 3rd section colors
+@third-section-bgColor:@md-cyan-500;
+@third-section-color:@white-text-color;
+
+
+// 4rd section colors
+@forth-section-bgColor:@md-pink-500;
+@forth-section-color:@white-text-color;
+
+
+
+
+
+
+
+// standard section color
+.itemHeader{
+  background-color: @standard-section-bgColor;
+}
+
+.linkButton, .itemHeaderBackButton{
+  color: @standard-section-color;
+}
+
+
+
+.firstSection{
+  .sectionColors(@color:@first-section-color; @bgcolor:@first-section-bgColor );
+}
+
+.secondSection{
+  .sectionColors(@color:@second-section-color; @bgcolor:@second-section-bgColor );
+}
+
+.thirdSection{
+  .sectionColors(@color:@third-section-color; @bgcolor:@third-section-bgColor );
+}
+
+.thirdSection{
+  .sectionColors(@color:@third-section-color; @bgcolor:@third-section-bgColor );
+}
+
+
+.forthSection{
+  .sectionColors(@color:@forth-section-color; @bgcolor:@forth-section-bgColor );
+}
+
+
+
+
+
+
+
+
+.sectionColors(@color: black; @bgcolor: #ccc) {
+  .itemHeader{
+    background-color: @bgcolor;
+  }
+
+  .linkButton, .itemHeaderBackButton{
+    color: @color;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
