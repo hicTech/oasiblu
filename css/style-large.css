@@ -1,0 +1,57 @@
+/*
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Header */
+
+	#header {
+		padding: 2em 3em 3em 3em;
+		width: 30%;
+	}
+
+		#header h1 {
+			font-size: 1.25em;
+		}
+
+			#header h1 br {
+				display: none;
+			}
+
+/* Footer */
+
+	#footer {
+		padding: 0 3em 5em 3em;
+		width: 30%;
+	}
+
+		#footer .copyright li {
+			border-left-width: 0;
+			display: block;
+			line-height: 1em;
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+/* Main */
+
+	#main {
+		margin-left: 30%;
+		max-width: none;
+		padding: 2em 3em 3em 3em;
+		width: calc(100% - 30%);
+	}
+
+
+
+
+.iconRow-icon{
+    width: 120px;
+    height: 120px;
+    background-size: 100% 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
