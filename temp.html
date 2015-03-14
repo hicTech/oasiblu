@@ -44,6 +44,12 @@
         <meta name="theme-color" content="#ffffff">
 
 
+        <!-- VIDEO.JS -->
+        <link rel="stylesheet" href="js/lib/videojs/video-js.css" />
+        <script src="js/lib/videojs/video.js"></script>
+        <script src="js/lib/videojs/media.youtube.js"></script>
+
+
 
 	</head>
 	<body id="top">
@@ -59,6 +65,9 @@
                     </span>
 				</h1>
 			</header>
+
+
+
 
 		<!-- Main -->
 			<div id="main">
@@ -82,9 +91,18 @@
                             <img src="images/fulls/marchio.png" alt="" style="margin: 0px auto"/></a>
                         </div>
 
+                        <video id="example_video_1"
+                               class="video-js vjs-default-skin"
+                               controls
+                               preload="auto"
+                               width="640"
+                               height="264"
+                               poster=""
+                               data-setup='{"techOrder":["youtube"], "src":"https://www.youtube.com/watch?v=XdFzt0avx1o"}'></video>
 
 
-					</section>
+
+                    </section>
 
 
 
@@ -96,16 +114,16 @@
                         }
                     </style>
                     <section id="canvas1" class="map">
-                        <header>
-                            <h3>Vieni a trovarci</h3>
+
+                            <h1>Vieni a trovarci</h1>
 
                             <p>
                                 <strong>Oasi Blu ti regala 6 litri di acqua.</strong>
-                                Scarica e stampe il coupon, vieni a trovarci dalle 9:00 alle 18:00 e saremo lieti di omaggiarti della tessera
+                                Scarica e stampa il coupon, vieni a trovarci dalle 9:00 alle 18:00 e saremo lieti di omaggiarti della tessera
                                 prepagata ricaricabile contenente già un importo pari a 6 litri d’acqua.
                                 Solo fino al 30 marzo.
                             </p>
-                        </header>
+
                         <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3085.976524225428!2d16.241692300000004!3d39.3341174!3m2!1i1024!2i768!4f13.1!2m1!1svia+don+minzoni+77+rende!5e0!3m2!1sit!2sit!4v1426092501611" width="100%" height="350" frameborder="0" style="border:0"></iframe>
 
                         <ul class="actions" style="text-align: center">
@@ -138,8 +156,8 @@
 
                     <!-- Come funziona -->
                     <section>
-                        <header>
-                            <h3>Come funziona?</h3>
+
+                            <h1>Come funziona?</h1>
                             <p>
                                 Posiziona la tua bottiglia nel punto di erogazione, inserisci le monete o la tua tessera prepagata
                                 ricaricabile, premi il pulsante di erogazione dell’acqua desiderata (naturale o frizzante). Ad ogni
@@ -149,7 +167,7 @@
                             <div class="responsive_image" style="text-align: center">
                                 <img src="images/fulls/confronto.png" alt="" style="margin: 0px auto"/></a>
                             </div>
-                        </header>
+
                     </section>
 
 
@@ -157,7 +175,7 @@
 
                         <div class="row">
                             <div class="iconRow">
-                                <div class="iconRow-icon" style="background-image:url(images/fulls/salute.png)"></div>
+                                <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/salute.png)"></div></div>
                                 <div class="iconRow-desc">
                                     <h1>L'acqua fa bene</h1>
                                     <p>Bere tanta acqua fa bene alla salute! ognuno di noi dovrebbe berne almeno un litro e mezzo al giorno al giorno;</p>
@@ -167,12 +185,12 @@
                                 </div>
                             </div>
                             <div class="iconRow">
-                                <div class="iconRow-icon" style="background-image:url(images/fulls/ambiente.png)"></div>
+                                <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/ambiente.png)"></div></div>
                                 <div class="iconRow-desc">
                                     <h1>Sostenibile</h1>
-                                    <p>Oasi Blu favorisce il riusco delle bottiglie di plastica riducendo conseguentemente l'impatto che queste hanno sul nostro ambiente.</p>
+                                    <p>Oasi Blu favorisce il riuso delle bottiglie di plastica riducendo di conseguenza l'impatto che queste hanno sul nostro ambiente.</p>
                                     <div class="hint">
-                                        Oasi Blu consiglia l'uso delle bottiglie in vetro. Le materie plastiche possono rilasciare elementi chimici che le nostre cellule non riescono ad espellere in modo naturale. Un contenitore in vetro invece non rilascia alle bevande che contiene alcuna sostanza.
+                                        Oasi Blu consiglia l'uso delle bottiglie in vetro. Le materie plastiche possono rilasciare elementi chimici che le nostre cellule non riescono ad espellere in modo naturale. Il contenitore in vetro invece, per sua natura, non rilascia alcuna sostanza.
                                     </div>
                                 </div>
                             </div>
@@ -180,17 +198,17 @@
 
                         <div class="row">
                             <div class="iconRow">
-                                <div class="iconRow-icon" style="background-image:url(images/fulls/risparmia.png)"></div>
+                                <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/risparmia.png)"></div></div>
                                 <div class="iconRow-desc">
                                     <h1>Risparmia</h1>
                                     <p>Per ogni litro d'acqua Oasi Blu che bevi risparmi oltre 10 centesimi di euro, un risparmio davvero considerevole!</p>
                                 </div>
                                 <div class="hint">
-                                    La tua famiglia (composta da 4 persone) con un consumo procapite medio di 1 litro d'acqua al giorno, consuma circa 1500 litri d'acqua. Nel 2014 hai speso circa 230 euro solo di acqua! se quest'anno di servi all'Oasi Blu ne spenderai poco più di 70.
+                                    La tua famiglia (composta da 4 persone) con un consumo procapite medio di 1 litro d'acqua al giorno, consuma circa 1500 litri d'acqua. Nel 2014 hai speso circa 230 euro solo di acqua! se quest'anno ti servi all'Oasi Blu ne spenderai poco più di 70.
                                 </div>
                             </div>
                             <div class="iconRow">
-                                <div class="iconRow-icon" style="background-image:url(images/fulls/analisi.png)"></div>
+                                <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/analisi.png)"></div></div>
                                 <div class="iconRow-desc">
                                     <h1>Controlli Mensili</h1>
                                     <p>Ogni 2 mesi l'acqua viene analizzata da esperti. Affisso al distributore troverai sempre il referto dell'ultima analisi effettuata sulla nostra acqua</p>
@@ -203,7 +221,7 @@
 
                         <div class="row">
                             <div class="iconRow">
-                                <div class="iconRow-icon" style="background-image:url(images/fulls/racaricabile.png)"></div>
+                                <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/racaricabile.png)"></div></div>
                                 <div class="iconRow-desc">
                                     <h1>Ricaricabile</h1>
                                     <p>Puoi richiedere gratuitamente la tessera ricaricabile per il nostro distributore Oasi Blu sito in via Don Minzoni 77 Rende.</p>
@@ -224,14 +242,14 @@
                     <h2>Prossimamente</h2>
                     <div class="row">
                         <div class="iconRow">
-                            <div class="iconRow-icon" style="background-image:url(images/fulls/porta.png)"></div>
+                            <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/porta.png)"></div></div>
                             <div class="iconRow-desc">
                                 <h1>Porta a Porta</h1>
                                 <p>Verrà attivato il servizio di consegna a domicilio dell'acqua. Preacquista una partita d'acqua e oltre a garantirti una scontistica particolare potrai fissare delle consegne periodiche presso il tuo domicilio.</p>
                             </div>
                         </div>
                         <div class="iconRow">
-                            <div class="iconRow-icon" style="background-image:url(images/fulls/phone.png)"></div>
+                            <div class="iconRow-icon-wrapper"><div class="iconRow-icon" style="background-image:url(images/fulls/phone.png)"></div></div>
                             <div class="iconRow-desc">
                                 <h1>L'app Oasi Blu</h1>
                                 <p>A breve sarà disponibile l'applicazione Oasi Blu da istallare sul tuo smartphone. L'applicazione ti consentirà di ricaricare la tessera, variare il tuo piano di consegne periodiche a domicilio, ricevere aggiornamenti e promozioni e comunicare con gli altri utenti Oasi Blu.</p>
