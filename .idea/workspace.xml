@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b35e47ca-1844-4e5f-aa74-59656fbd37b8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/videojs/media.youtube.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/videojs/video-js.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib/videojs/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ht.css" afterPath="$PROJECT_DIR$/css/ht.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-large.css" afterPath="$PROJECT_DIR$/css/style-large.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-medium.css" afterPath="$PROJECT_DIR$/css/style-medium.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-small.css" afterPath="$PROJECT_DIR$/css/style-small.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-xlarge.css" afterPath="$PROJECT_DIR$/css/style-xlarge.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style-xsmall.css" afterPath="$PROJECT_DIR$/css/style-xsmall.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp.html" afterPath="$PROJECT_DIR$/temp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="oasiblu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +30,8 @@
           <file leaf-file-name="temp.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/temp.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.72304994" vertical-offset="660" max-vertical-offset="10380">
-                  <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.6441718" vertical-offset="660" max-vertical-offset="10245">
+                  <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
                   <folding>
                     <element signature="n#style#0;n#p#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -839,8 +828,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72304994" vertical-offset="660" max-vertical-offset="10380">
-          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.6441718" vertical-offset="660" max-vertical-offset="10245">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#p#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
