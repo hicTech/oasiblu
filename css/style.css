@@ -1271,6 +1271,15 @@
     box-shadow: inset -20px 0px 20px rgba(0,0,0,0.05);
 }
 
+#vid1{
+    margin: 20px auto;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    width: 479px;
+    height: 359px;
+}
+
+
+
 p strong{
     font-weight: bold;
     color: #2457a0;
@@ -1312,3 +1321,15 @@ p strong{
     margin: -1em 0px 3.2em 17em;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
 }
+
+video{
+    width: 100px;
+    height: 50px;
+}
+
+
+.responsive_image img:first-child{
+    width: 55%;
+    text-align: right;
+}
+
