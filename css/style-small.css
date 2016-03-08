@@ -6,102 +6,95 @@
 
 /* Basic */
 
-	h1 {
-		font-size: 1.5em;
-	}
+h1 {
+    font-size: 1.5em;
+}
 
-	h2 {
-		font-size: 1.2em;
-	}
+h2 {
+    font-size: 1.2em;
+}
 
-	h3 {
-		font-size: 1em;
-	}
+h3 {
+    font-size: 1em;
+}
 
 /* Section/Article */
 
-	section.special, article.special {
-		text-align: center;
-	}
-
-	header.major h2 {
-		font-size: 1.35em;
-	}
-
-/* List */
-
-	ul.labeled-icons li {
-		padding-left: 2em;
-	}
-
-		ul.labeled-icons li h3 {
-			line-height: 1.75em;
-		}
-
-/* Header */
-
-	#header {
-		padding: 1.5em 1.5em;
-	}
-
-		#header h1 {
-			font-size: 1.35em;
-		}
-
-/* Footer */
-
-	#footer {
-		padding: 2.25em 1.5em;
-	}
-
-/* Main */
-
-	#main {
-		padding: 1.25em 1.5em 0.25em 1.5em;
-	}
-
-		#main > section {
-			margin: 2.25em 0 0 0;
-			padding: 2.25em 0 0 0;
-		}
-
-/* Poptrox */
-
-	.poptrox-popup {
-		border-radius: 0;
-	}
-
-		.poptrox-popup .nav-next:before,
-		.poptrox-popup .nav-previous:before {
-			margin-top: -1em;
-		}
-
-
-
-
-
-
-
-.responsive_image img:first-child{
-    width: 45%;
-}
-
-.iconRow{
+section.special, article.special {
     text-align: center;
 }
 
-.iconRow-desc{
+header.major h2 {
+    font-size: 1.35em;
+}
+
+/* List */
+
+ul.labeled-icons li {
+    padding-left: 2em;
+}
+
+ul.labeled-icons li h3 {
+    line-height: 1.75em;
+}
+
+/* Header */
+
+#header {
+    padding: 1.5em 1.5em;
+}
+
+#header h1 {
+    font-size: 1.35em;
+}
+
+/* Footer */
+
+#footer {
+    padding: 2.25em 1.5em;
+}
+
+/* Main */
+
+#main {
+    padding: 1.25em 1.5em 0.25em 1.5em;
+}
+
+#main > section {
+    margin: 2.25em 0 0 0;
+    padding: 2.25em 0 0 0;
+}
+
+/* Poptrox */
+
+.poptrox-popup {
+    border-radius: 0;
+}
+
+.poptrox-popup .nav-next:before,
+.poptrox-popup .nav-previous:before {
+    margin-top: -1em;
+}
+
+.responsive_image img:first-child {
+    width: 45%;
+}
+
+.iconRow {
+    text-align: center;
+}
+
+.iconRow-desc {
     clear: both;
 }
 
-.iconRow-icon-wrapper{
+.iconRow-icon-wrapper {
     width: 60px;
     height: 60px;
     margin: 0px auto;
 }
 
-
-.iconRow-icon{
+.iconRow-icon {
     width: 100%;
     height: 100%;
     float: left;
@@ -109,13 +102,35 @@
     background-position: center;
 }
 
-
-
-.hint{
+.hint {
     font-size: 0.83em;
     line-height: 1.35em;
-    background-color: rgba(0,140,255,0.1);
+    background-color: rgba(0, 140, 255, 0.1);
     padding: 1.2em;
     margin: -1em 0px 3.2em 0em;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* CUSTOM */
+.referti{
+    height: 350px;
+}
+.container-referti {
+    padding-bottom: 15px;
+}
+
+.label-referti {
+    clear: both;
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    line-height: 50px
+}
+
+.referti-pdf {
+    clear: both;
+    float: none;
+    width: 100%;
+    max-width: 400px;
 }
